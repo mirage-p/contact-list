@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Webpage Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-    <header>
-        <h1>Your Website Header</h1>
-    </header>
-
+    <!-- header component -->
     <section>
-        <h2>Section Title</h2>
-        <div>
-            <p>This is a section of your webpage.</p>
-            <!-- Your other content goes here -->
-        </div>
+        <!-- top fold component -->
+        <header>
+            <div>
+                <img src="#" alt="logo">
+                <h1>Your Website Header</h1>
+            </div>
+
+            <div>
+                <h2>Organize your Contacts</h2>
+                <p>Keeping your network close has never been easier.</p>
+            </div>
+        </header>
     </section>
 
-    <form action="your_action_url" method="post">
-        <label for="inputField">Input Field:</label>
-        <input type="text" id="inputField" name="inputFieldName">
-        <button type="submit">Submit</button>
-    </form>
-
+    <!-- form component is displayed one button is pressed only verified users can press the component -->
     <div>
-        <img src="your_image_source.jpg" alt="Description of the image">
+        <a href="./createContact.html">
+            <button type="submit">New Contact</button>
+        </a>
     </div>
 
-    <select>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-    </select>
+    <!-- select an edit component -->
+    <div>
+        <a href="./editContact.html">
+            <button type="submit">Edit Contact</button>
+        </a>
+    </div>
 
-    <button type="button">Click me</button>
-
-    <footer>
-        <p>&copy; 2024 Your Website Footer</p>
-    </footer>
+    <section>
+        <footer>
+            <p>&copy; 2024 Your Website Footer</p>
+        </footer>
+    </section>
 
 </body>
+
 </html>

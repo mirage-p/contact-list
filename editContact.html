@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <!-- top fold component -->
+        <header>
+            <div>
+                <img src="./images/edit.jpeg" alt="Description of the image">
+                <h1>Changing Information?</h1>
+                <h2>Select the Contact to Update</h2>
+                <p>Way to maintain your network</p>
+            </div>
+        </header>
+    </section>
+
+    <div>
+        <form action="your_action_url" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="newContactInfo" placeholder="get the info from database to update">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="newContactInfo">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="newContactInfo">
+            <label for="phone">Phone-Number:</label>
+            <input type="text" id="phone" name="newContactInfo">
+        </form>
+
+        <button type="submit">Update New Contact</button>
+    </div>
+</body>
+</html>
