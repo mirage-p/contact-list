@@ -8,36 +8,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <!-- header component -->
-    <section>
-        <!-- top fold component -->
-        <header>
-            <div>
-                <img src="#" alt="logo">
-                <h1>Your Website Header</h1>
-            </div>
-
-            <div>
-                <h2>Organize your Contacts</h2>
-                <p>Keeping your network close has never been easier.</p>
-            </div>
-        </header>
-    </section>
-
-    <!-- form component is displayed one button is pressed only verified users can press the component -->
-    <div>
-        <a href="./createContact.html">
-            <button type="submit">New Contact</button>
-        </a>
+<!-- header component -->
+<!-- top fold component -->
+<header>
+    <div id="header-color">
+        <div class="brand">
+            <img src="./images/contact.png" alt="logo">
+            <h1>Contact List</h1>
+            
+            <nav>
+                <div>
+                    <!-- form component is displayed once button is pressed -->
+                    <a href="./createContact.html">
+                        <button type="button">New Contact</button>
+                    </a>
+                </div>
+                
+                <div>
+                    <!-- use javascript to check if a contact has been selected, only then can we press the button -->
+                    <a href="./editContact.html">
+                        <button type="button">Edit Contact</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
     </div>
+    <div id="description-color">
+        <div class="description">
+            <h2>Organize your Contacts</h2>
+            <p>Keeping your network close has never been easier.</p>
+        </div>
+    </div>
+</header>
+
+
+<body>
+<div id="table-color">
+    <table>
+            <tr>
+                <th>Select</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Miraj Patel</td>
+                <td>hello@example.com</td>
+                <td>123-456-7890</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Friend 2</td>
+                <td>hello@example.com</td>
+                <td>123-456-7890</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Friend 3</td>
+                <td>hello@example.com</td>
+                <td>123-456-7890</td>
+            </tr>
+        </table>
+    </div>
+</body>
 
     <!-- select an edit component -->
-    <div>
-        <a href="./editContact.html">
-            <button type="submit">Edit Contact</button>
-        </a>
-    </div>
+
 
     <section>
         <footer>
@@ -45,6 +82,5 @@
         </footer>
     </section>
 
-</body>
 
 </html>
