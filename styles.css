@@ -1,160 +1,101 @@
-/* body {
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
-    margin: auto;
-    background-color: #8797AF;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: left;
-}
-
-.brand {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.brand img {
-    max-width: 100px;
-    margin: auto;
-}
-
-.brand h1 {
-    margin: auto;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    margin: auto;
-}
-
-#header-color {
-    background-color: #508CA4;
-}
-#description-color {
-    background-color: #91AEC1;
-}
-
-.description {
-    padding-top: 25px;
-    margin-top: 20px;
-    margin-left: 5%;
-}
-
-.description h2 {
-    margin-bottom: 10%;
-}
-
-#table-color {
-    background-color: #8797AF;
-}
-table {
-    width: 80%;
-    border-collapse: collapse;
-    margin: auto;
-    background-color: #BFD7EA;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid black;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: baseline;
-} */
-
-/* Reset some default styles for consistency */
-body, h1, h2, p, ul, li, table {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Global Styles */
-#header-color, #description-color, #table-color {
-    background-color: #3498db; /* Blue color, you can change this */
-    color: #fff; /* White text on the colored background */
-    padding: 20px;
-}
-
-.brand {
+    height: 100vh; /* adjust as needed */
+  }
+  
+  #header-color {
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+  
+  .brand {
     display: flex;
     align-items: center;
-}
-
-.brand img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-nav {
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+  nav {
     display: flex;
-}
-
-button {
-    background-color: #2ecc71; /* Green color, you can change this */
-    color: #fff;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 10px;
-    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #27ae60; /* Darker green on hover, you can change this */
-}
-
-#description-color {
-    margin-top: 20px;
-    padding: 20px;
+  }
+  
+  #description-color {
+    background-color: #f0f0f0;
+    padding: 2rem;
     text-align: center;
-}
-
-/* Table Styles */
-table {
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Table */
+  #table-color {
+    background-color: #fff;
+    padding: 2rem;
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    border: 1px solid #fff; /* White border for cells */
-    padding: 10px;
+  }
+  
+  th, td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  th {
     text-align: left;
-}
-
-th {
-    background-color: #34495e; /* Dark gray color, you can change this */
-    color: #fff;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #2c3e50; /* Darker gray color, you can change this */
-    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+  }
+  
+  /* Remove default styles */
+  a {
+    text-decoration: none;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+  
+  /* You can add more styles here to customize your website further! */
+  
