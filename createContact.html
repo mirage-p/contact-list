@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create New Contact</title>
+    <link rel="stylesheet" href="create.css">
 </head>
 <body>
-    <section>
-        <!-- top fold component -->
+    <div class="container">
         <header>
-            <div>
-                <img src="./images/edit.jpeg" alt="Description of the image">
-                <h1>Who is it?</h1>
-                <h2>Fill in the Available Info</h2>
-                <p>Way to extend your network</p>
-            </div>
+            <img src="./images/edit.jpeg" alt="Edit Contact">
+            <h1>Create New Contact</h1>
+            <h2>Fill in the information below</h2>
+            <p>Expand your network by adding new contacts.</p>
         </header>
-    </section>
-
-    <div>
         <form action="your_action_url" method="post">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="newContactInfo">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="newContactInfo">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="newContactInfo">
-            <label for="phone">Phone-Number:</label>
-            <input type="text" id="phone" name="newContactInfo">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+            <button type="submit">Create Contact</button>
+            <button type="reset">Clear Form</button>
         </form>
-
-        <button type="submit">Create New Contact</button>
     </div>
 </body>
 </html>

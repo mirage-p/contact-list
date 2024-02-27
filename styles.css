@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh; /* adjust as needed */
   }
   
   #header-color {
@@ -38,6 +37,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    margin-left: auto;
+    gap: 10px;
   }
   
   button {
