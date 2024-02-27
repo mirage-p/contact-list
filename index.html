@@ -44,7 +44,9 @@
 
 <body>
 <div id="table-color">
-    <table>
+    <button onclick="populate()">View Contacts</button>
+    <button onclick="hideContacts()">Hide Contacts</button>
+    <table hidden>
             <tr>
                 <th>Select</th>
                 <th>Contact</th>
@@ -52,22 +54,22 @@
                 <th>Phone Number</th>
             </tr>
             <tr>
-                <td><input type="checkbox"></td>
-                <td>Miraj Patel</td>
-                <td>hello@example.com</td>
-                <td>123-456-7890</td>
+                <td><input type="checkbox" class="select"></td>
+                <td class="name"></td>
+                <td class="email"></td>
+                <td class="phone"></td>
             </tr>
             <tr>
                 <td><input type="checkbox"></td>
-                <td>Friend 2</td>
-                <td>hello@example.com</td>
-                <td>123-456-7890</td>
+                <td class="name"></td>
+                <td class="email"></td>
+                <td class="phone"></td>
             </tr>
             <tr>
                 <td><input type="checkbox"></td>
-                <td>Friend 3</td>
-                <td>hello@example.com</td>
-                <td>123-456-7890</td>
+                <td class="name"></td>
+                <td class="email"></td>
+                <td class="phone"></td>
             </tr>
         </table>
     </div>
@@ -82,5 +84,5 @@
         </footer>
     </section>
 
-
+<script src="index.js" defer></script>
 </html>
