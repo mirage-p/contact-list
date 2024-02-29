@@ -43,10 +43,10 @@
 
 
 <body>
-<div id="table-color">
+<div id="table-color" onload="getContacts()">
     <button onclick="populate()">View Contacts</button>
     <button onclick="hideContacts()">Hide Contacts</button>
-    <table hidden>
+    <table id="table1" hidden>
             <tr>
                 <th>Select</th>
                 <th>Contact</th>
@@ -54,19 +54,19 @@
                 <th>Phone Number</th>
             </tr>
             <tr>
-                <td><input type="checkbox" class="select"></td>
+                <td><input type="checkbox" onchange="gatherContacts()"></td>
                 <td class="name"></td>
                 <td class="email"></td>
                 <td class="phone"></td>
             </tr>
             <tr>
-                <td><input type="checkbox"></td>
+                <td><input type="checkbox" onchange="gatherContacts()"></td>
                 <td class="name"></td>
                 <td class="email"></td>
                 <td class="phone"></td>
             </tr>
             <tr>
-                <td><input type="checkbox"></td>
+                <td><input type="checkbox" onchange="gatherContacts()"></td>
                 <td class="name"></td>
                 <td class="email"></td>
                 <td class="phone"></td>
@@ -85,4 +85,5 @@
     </section>
 
 <script src="index.js" defer></script>
+<script src="edit.js" defer></script>
 </html>

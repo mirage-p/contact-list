@@ -4,10 +4,19 @@
 // this function can populate the columns of the table displaying the contacts on the home page
 // gets the data from the databse, need to hook that up
 function populate() {
-    const nameValues = ['Miraj', 'Joe', 'Moe'];
-    const emailValues = ['miraj@example.com', 'joe@example.com', 'moe@example.com'];
-    const phoneValues = ['123-456-7890', '234-567-8901', '345-678-9012'];
-    const name = document.getElementsByClassName("name");    
+    const jsonString = localStorage.getItem("contacts.json");
+    if (jsonString) {
+        const contacts = JSON.parse(jsonString);
+        // Process or display the contacts data however you need here
+        console.log(contacts); // Example: Log the parsed contacts
+        console.log(contacts.name)
+    } else {
+        console.log("No contacts found in local storage");
+    }
+
+    console.log(contacts[0].name)
+
+    const name = document.getElementsByClassName("name");
     const email = document.getElementsByClassName("email");
     const phone = document.getElementsByClassName("phone");
     const table = document.getElementsByTagName("table");
@@ -21,10 +30,11 @@ function populate() {
     table[0].hidden = false;
 }
 
+function getContacts() {
+
+}
+
 function hideContacts() {
     const table = document.getElementsByTagName("table");
     table[0].hidden = true;
 }
-
-const selectedContacts = document.getElementsByClassName("select")
-console.log(selectedContacts)
