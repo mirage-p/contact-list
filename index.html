@@ -16,7 +16,7 @@
             <img src="./images/contact.png" alt="logo">
             <h1>Contact List</h1>
             
-            <nav>
+            <nav onload="clearChecked()">
                 <div>
                     <!-- form component is displayed once button is pressed -->
                     <a href="./createContact.html">
@@ -26,9 +26,7 @@
                 
                 <div>
                     <!-- use javascript to check if a contact has been selected, only then can we press the button -->
-                    <a href="./editContact.html">
-                        <button type="button">Edit Contact</button>
-                    </a>
+                    <button onclick="verify()" type="button">Edit Contact</button>
                 </div>
             </nav>
         </div>
@@ -43,8 +41,8 @@
 
 
 <body>
-<div id="table-color" onload="getContacts()">
-    <button onclick="populate()">View Contacts</button>
+<div id="table-color">
+    <button onclick="getContacts()">View Contacts</button>
     <button onclick="hideContacts()">Hide Contacts</button>
     <table id="table1" hidden>
             <tr>
@@ -54,19 +52,19 @@
                 <th>Phone Number</th>
             </tr>
             <tr>
-                <td><input type="checkbox" onchange="gatherContacts()"></td>
+                <td><input type="checkbox" onchange="readContact()"></td>
                 <td class="name"></td>
                 <td class="email"></td>
                 <td class="phone"></td>
             </tr>
             <tr>
-                <td><input type="checkbox" onchange="gatherContacts()"></td>
+                <td><input type="checkbox" onchange="readContact()"></td>
                 <td class="name"></td>
                 <td class="email"></td>
                 <td class="phone"></td>
             </tr>
             <tr>
-                <td><input type="checkbox" onchange="gatherContacts()"></td>
+                <td><input type="checkbox" onchange="readContact()"></td>
                 <td class="name"></td>
                 <td class="email"></td>
                 <td class="phone"></td>
@@ -86,4 +84,5 @@
 
 <script src="index.js" defer></script>
 <script src="edit.js" defer></script>
+<script src="verifyEdit.js" defer></script>
 </html>

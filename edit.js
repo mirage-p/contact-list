@@ -2,11 +2,15 @@ function createFile(fileName, data) {
     localStorage.setItem(fileName, data);
 }
 
-function gatherContacts() {
+function clearChecked() {
+    localStorage.removeItem("edits.json");
+    console.log("Contacts removed from local storage");
+}
+
+function readContact() {
     const table = document.getElementById("table1");
     const tableRows = table.getElementsByTagName("input")
     const json = [];
-    console.log(tableRows);
 
     for (let i = 0; i < tableRows.length; i++) {
         if (tableRows[i].checked) {
