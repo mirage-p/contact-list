@@ -16,7 +16,7 @@
             <img src="./images/contact.png" alt="logo">
             <h1>Contact List</h1>
             
-            <nav>
+            <nav onload="clearChecked()">
                 <div>
                     <!-- form component is displayed once button is pressed -->
                     <a href="./createContact.html">
@@ -26,9 +26,7 @@
                 
                 <div>
                     <!-- use javascript to check if a contact has been selected, only then can we press the button -->
-                    <a href="./editContact.html">
-                        <button type="button">Edit Contact</button>
-                    </a>
+                    <button onclick="verify()" type="button">Edit Contact</button>
                 </div>
             </nav>
         </div>
@@ -44,31 +42,37 @@
 
 <body>
 <div id="table-color">
-    <table>
+    <button onclick="getContacts()">View Contacts</button>
+    <button onclick="hideContacts()">Hide Contacts</button>
+    <table id="table1" hidden>
+        <thead>
             <tr>
                 <th>Select</th>
                 <th>Contact</th>
                 <th>Email</th>
                 <th>Phone Number</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
-                <td><input type="checkbox"></td>
-                <td>Miraj Patel</td>
-                <td>hello@example.com</td>
-                <td>123-456-7890</td>
+                <td><input type="checkbox" onchange="editContact()"></td>
+                <td class="name"></td>
+                <td class="email"></td>
+                <td class="phone"></td>
             </tr>
             <tr>
-                <td><input type="checkbox"></td>
-                <td>Friend 2</td>
-                <td>hello@example.com</td>
-                <td>123-456-7890</td>
+                <td><input type="checkbox" onchange="editContact()"></td>
+                <td class="name"></td>
+                <td class="email"></td>
+                <td class="phone"></td>
             </tr>
             <tr>
-                <td><input type="checkbox"></td>
-                <td>Friend 3</td>
-                <td>hello@example.com</td>
-                <td>123-456-7890</td>
+                <td><input type="checkbox" onchange="editContact()"></td>
+                <td class="name"></td>
+                <td class="email"></td>
+                <td class="phone"></td>
             </tr>
+        </tbody>
         </table>
     </div>
 </body>
@@ -82,5 +86,6 @@
         </footer>
     </section>
 
-
+<script src="get.js" defer></script>
+<script src="edit.js" defer></script>
 </html>
