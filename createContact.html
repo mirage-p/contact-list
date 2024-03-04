@@ -18,17 +18,16 @@
             <fieldset>
                 <legend>Contact Details</legend>
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <input class="name" type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input class="email" type="email" id="email" name="email" required>
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+                <input class="phone" type="tel" id="phone" name="phone">
             </fieldset>
-            <button type="submit">Create Contact</button>
+            <button type="button" onclick="createContact()">Create Contact</button>
             <button type="reset">Clear Form</button>
         </form>
     </div>
 </body>
+<script src="create.js" defer></script>
 </html>

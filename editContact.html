@@ -6,7 +6,7 @@
     <title>Update Contact</title>
     <link rel="stylesheet" href="edit.css">
 </head>
-<body>
+<body onload="getEdit()">
     <div class="container">
         <header>
             <img src="./images/edit.jpeg" alt="Description of the image">
@@ -20,20 +20,20 @@
 
             <fieldset>
                 <legend>Contact Details</legend>
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstNameUpdated" required>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastNameUpdated" required>
+                <label for="name">First Name:</label>
+                <input class="name" type="text" id="name" name="firstNameUpdated" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="emailUpdated" required>
+                <input class = "email" type="email" id="email" name="emailUpdated" required>
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phoneUpdated">
+                <input class = "phone" type="tel" id="phone" name="phoneUpdated">
             </fieldset>
 
-            <button type="submit" onclick="goHome()">Save Changes</button>
+            <button type="button" onclick="postContact()">Save Changes</button>
         </form>
     </div>
 </body>
 <script src="edit.js" defer></script>
 <script src="verifyEdit.js" defer></script>
+<script src="post.js" defer></script>
+<script src="get.js" defer></script>
 </html>

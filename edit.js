@@ -7,7 +7,7 @@ function clearChecked() {
     console.log("Contacts removed from local storage");
 }
 
-function readContact() {
+function editContact() {
     const table = document.getElementById("table1");
     const tableRows = table.getElementsByTagName("input")
     const json = [];
@@ -27,4 +27,18 @@ function readContact() {
     }
     const jsonString = JSON.stringify(json);
     createFile("edits.json", jsonString);
+}
+
+function verify() {
+    const jsonString = localStorage.getItem("edits.json");
+    if (!jsonString) {
+        window.alert('No contact to edit')
+    }
+    const edit = JSON.parse(jsonString)
+    console.log(typeof(edit.length))
+    
+    if (edit.length === 1) {
+        location.href = './editContact.html'
+    } 
+    else {window.alert('Select one contact to edit')}
 }

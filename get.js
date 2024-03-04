@@ -6,6 +6,8 @@
 function getContacts() {
 
     const jsonString = localStorage.getItem("contacts.json");
+    console.log(jsonString)
+    
     if (jsonString) {
         const nameHTML = document.getElementsByClassName("name");
         const emailHTML = document.getElementsByClassName("email");
@@ -20,12 +22,25 @@ function getContacts() {
             table[0].hidden = false;
         }
     } else {
-        console.log("No contacts found in local storage");
+        window.alert("No contacts to show");
     }
 }
 
 function getEdit() {
-    
+    const jsonString = localStorage.getItem("edits.json");
+
+    if (jsonString) {
+        const nameHTML = document.getElementsByClassName("name");
+        const emailHTML = document.getElementsByClassName("email");
+        const phoneHTML = document.getElementsByClassName("phone");
+        const contacts = JSON.parse(jsonString);
+
+        nameHTML[0].value = contacts[0].name
+        emailHTML[0].value = contacts[0].email
+        phoneHTML[0].value = contacts[0].phone
+    } else {
+        console.log("No contacts found in local storage");
+    }
 }
 
 function hideContacts() {
